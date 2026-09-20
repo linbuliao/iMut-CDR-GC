@@ -14,9 +14,14 @@ binding is not assumed.
 | **iMut-CDR-GC** | Explicit preparation, scoring, selection and export stages | `imut-cdr-gc run --config CONFIG.json` |
 | **DeepCDR-3D** | Computational interaction scoring from an antibody fold and antigen pocket | `imut-cdr-gc score --models 3d` |
 
-The package also includes DeepCDR-ESM2 scoring, likelihood analysis, antibody
-folding and founder-pose side-chain reconstruction. Learned weights and research
-datasets are **not included or downloaded automatically**.
+**DeepCDR-ESM2** is an additional antibody–antigen interaction scoring model
+used in the GC screening workflow. See the
+[original DeepCDR-ESM2 repository](https://github.com/haiping1010/DeepCDR_esm2)
+for its implementation.
+
+The package also provides likelihood analysis, antibody folding and founder-pose
+side-chain reconstruction. Learned weights and research datasets are
+**not included or downloaded automatically**.
 
 ## Quickstart: no models or GPU required
 

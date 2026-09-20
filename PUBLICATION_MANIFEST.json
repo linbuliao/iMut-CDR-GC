@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4807,
-      "sha256": "422f3a555fea2887ca047bdc62d50309f4f82e82de7d6faa4a8b270bfdca2757"
+      "bytes": 5012,
+      "sha256": "c94d333deb57620f4f62dd69aa94946f1ef3c1b4995da6450741f05252da0fde"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -390,5 +390,5 @@
     }
   ],
   "file_count_excluding_this_manifest": 77,
-  "bytes_excluding_this_manifest": 594671
+  "bytes_excluding_this_manifest": 594876
 }
