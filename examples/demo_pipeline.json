@@ -1,0 +1,23 @@
+{
+  "schema": "imut-cdr-gc-pipeline.v1",
+  "output_dir": "outputs/demo_run",
+  "steps": [
+    {
+      "name": "prepare",
+      "command": "prepare",
+      "arguments": {
+        "founder": "outputs/demo_inputs/founder.json",
+        "output_dir": "outputs/demo_prepared"
+      }
+    },
+    {
+      "name": "select",
+      "command": "select",
+      "arguments": {
+        "input": "outputs/demo_inputs/scored.jsonl",
+        "policy": "outputs/demo_inputs/policy.json",
+        "output_dir": "outputs/demo_selected"
+      }
+    }
+  ]
+}

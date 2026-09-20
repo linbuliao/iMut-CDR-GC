@@ -1,0 +1,25 @@
+{
+  "assets": {
+    "3d": {
+      "model": "DeepCDR-3D",
+      "weights": {
+        "path": "assets/deepcdr3d/model.pt",
+        "sha256": "REPLACE_WITH_ACTUAL_CHECKPOINT_SHA256"
+      },
+      "features": {
+        "path": "assets/deepcdr3d/amino_acid_vectors_30dim.json",
+        "sha256": "REPLACE_WITH_ACTUAL_FEATURE_SHA256"
+      }
+    }
+  },
+  "antigen": {
+    "id": "REPLACE_WITH_YOUR_ANTIGEN_ID",
+    "pocket_pdb": {
+      "path": "inputs/antigen_pocket.pdb",
+      "sha256": "REPLACE_WITH_ACTUAL_POCKET_SHA256"
+    },
+    "chains": {
+      "A": "REPLACE_WITH_EXACT_POCKET_CHAIN_SEQUENCE"
+    }
+  }
+}

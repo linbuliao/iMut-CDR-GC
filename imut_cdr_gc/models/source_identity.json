@@ -1,0 +1,157 @@
+{
+  "schema": "executed_jm_epi_model_extraction_v1",
+  "backbone": "ESM2 FR v1; no architecture substitution",
+  "source_sha256": {
+    "campaigns/design345/analysis/jm_diagnosis/source_evidence/jm_v1_trainer.py": "064055dc0fff38dcb1c5b7d0ba325f50263516de6f6ab8745c47d165c7e09fc9",
+    "campaigns/design345/analysis/jm_diagnosis/source_evidence/jm_epi_trainer.py": "95562e5d5f443c4d3ae96c47b4c80f0704b5f01c8c1a0f0e08b10e7646f4cd95"
+  },
+  "source_protocol_sha256": [
+    "6e61dd5cbbc08a481e028b3cf0d01aec7f5726054a7a78d333d5ed0a59b92c86",
+    "ab140a2f0bc488a17555220c9451be34bbe602d401adb8ef88076d198ed4657f"
+  ],
+  "selected_nodes": {
+    "fr": {
+      "RMSNorm": {
+        "line": 223,
+        "end_line": 235,
+        "sha256": "088a320c93e7867efa2d3cc719a258ac887784a33b3e45bd7de73da8647215f4"
+      },
+      "SimpleTransformerBlock": {
+        "line": 238,
+        "end_line": 275,
+        "sha256": "a2f6163435b52dc64c6dae3d8e545d41d5949c0b42480aac87ef79643ab2a4e2"
+      },
+      "SharedRDTBlock": {
+        "line": 278,
+        "end_line": 420,
+        "sha256": "f9694e10727275832b734950559e62b2bb763353fb54bf6b8e366337c0a43b85"
+      },
+      "ProteinMLMContrastModel": {
+        "line": 425,
+        "end_line": 684,
+        "sha256": "16baba47f9747d8b00112c8c3e815b2ba2ef6406745cc8606c150dcc1870d59d"
+      }
+    },
+    "epi": {
+      "RBF": {
+        "line": 476,
+        "end_line": 484,
+        "sha256": "ec20dc159e76db8659e08509e2a90bc01290516066d5f3f61d39f42347a8c9cf"
+      },
+      "make_sparse_attn_mask_with_bias": {
+        "line": 487,
+        "end_line": 512,
+        "sha256": "ac15fcbd6937547fc0f1828176f0c78a62ab7960fdc9f8cf3b340c0e7a6d0841"
+      },
+      "GraphTransformerBlock": {
+        "line": 515,
+        "end_line": 535,
+        "sha256": "9d3bb39495aaf77ae980163ac76d7fe90b26c7fd45d99aa3aeb496b7ce18a9ea"
+      },
+      "PocketGraphTransformer": {
+        "line": 538,
+        "end_line": 578,
+        "sha256": "a2b4072ad7eb91c67d2f897920fe344b2902a8710a1359191f2518ce56deaa51"
+      },
+      "TokenPocketCrossAttn": {
+        "line": 581,
+        "end_line": 595,
+        "sha256": "7f0d47ad7a6ebae30f3976f45a5ba53746fb3d91633273e616e127546d895b28"
+      },
+      "EpitopeConditionedFRCDRModel": {
+        "line": 598,
+        "end_line": 669,
+        "sha256": "f35cf9e6869252a9dfde61b8ca870b623753aee807cc9747fd15b92958dd42dd"
+      }
+    }
+  },
+  "changes": [
+    "Explicit injected encoder/tokenizer and immutable config instead of module globals.",
+    "No import-time trainer/data/environment/device/RNG actions.",
+    "CPU float32 reference uses null autocast; runtime precision is explicit at caller.",
+    "No learned checkpoint read in extraction or CPU fixture tests."
+  ],
+  "real_checkpoint_inference_verified": false,
+  "public_fixture": {
+    "transformation": "Translate explanatory comments to English only; no executable AST change; original source and selected-node hashes above remain unchanged.",
+    "selected_nodes": {
+      "fr": {
+        "RMSNorm": {
+          "sha256": "088a320c93e7867efa2d3cc719a258ac887784a33b3e45bd7de73da8647215f4",
+          "ast_sha256": "21ebfd7af0fb250d366cf704af7e733d4f2e2adc0a7f46080629389940ddb64e",
+          "original_selected_node_sha256": "088a320c93e7867efa2d3cc719a258ac887784a33b3e45bd7de73da8647215f4"
+        },
+        "SimpleTransformerBlock": {
+          "sha256": "a2f6163435b52dc64c6dae3d8e545d41d5949c0b42480aac87ef79643ab2a4e2",
+          "ast_sha256": "3ebe5c3d56ca606f669b2643dc18e46dc6fa3fe1d781a8a4fcb45c1931752298",
+          "original_selected_node_sha256": "a2f6163435b52dc64c6dae3d8e545d41d5949c0b42480aac87ef79643ab2a4e2"
+        },
+        "SharedRDTBlock": {
+          "sha256": "f9694e10727275832b734950559e62b2bb763353fb54bf6b8e366337c0a43b85",
+          "ast_sha256": "9c8c66e35283ba91de4f1b080af6a935b5f1400ced409446bd2608957bc61b2b",
+          "original_selected_node_sha256": "f9694e10727275832b734950559e62b2bb763353fb54bf6b8e366337c0a43b85"
+        },
+        "ProteinMLMContrastModel": {
+          "sha256": "92e5b36ccb2a907abe2eb9f8e70711c5a41632b38147022751d48f9fbb2bed5a",
+          "ast_sha256": "896cb3c1840956fd8eee4372fdc6d20aefc906f349690bf9118193d8c78265f0",
+          "original_selected_node_sha256": "16baba47f9747d8b00112c8c3e815b2ba2ef6406745cc8606c150dcc1870d59d"
+        }
+      },
+      "epi": {
+        "RBF": {
+          "sha256": "ec20dc159e76db8659e08509e2a90bc01290516066d5f3f61d39f42347a8c9cf",
+          "ast_sha256": "01c1d668741630883377edf0de314da6bf43ab80986e759c678e031877f48277",
+          "original_selected_node_sha256": "ec20dc159e76db8659e08509e2a90bc01290516066d5f3f61d39f42347a8c9cf"
+        },
+        "make_sparse_attn_mask_with_bias": {
+          "sha256": "ac15fcbd6937547fc0f1828176f0c78a62ab7960fdc9f8cf3b340c0e7a6d0841",
+          "ast_sha256": "b7b1fbfc7cbcab1e83e7178e4f9b0403d45ff2ae5e9d39ccbcfb9640a219a946",
+          "original_selected_node_sha256": "ac15fcbd6937547fc0f1828176f0c78a62ab7960fdc9f8cf3b340c0e7a6d0841"
+        },
+        "GraphTransformerBlock": {
+          "sha256": "9d3bb39495aaf77ae980163ac76d7fe90b26c7fd45d99aa3aeb496b7ce18a9ea",
+          "ast_sha256": "fab75780410b1e3e6c97e2c9be328d9bcb280654314c2b8ce08458da5e6adbf0",
+          "original_selected_node_sha256": "9d3bb39495aaf77ae980163ac76d7fe90b26c7fd45d99aa3aeb496b7ce18a9ea"
+        },
+        "PocketGraphTransformer": {
+          "sha256": "a2b4072ad7eb91c67d2f897920fe344b2902a8710a1359191f2518ce56deaa51",
+          "ast_sha256": "8ef0093888cb18aca427d9c7a9e75a3c893481a4f2800769a89f6f89a7c6db8e",
+          "original_selected_node_sha256": "a2b4072ad7eb91c67d2f897920fe344b2902a8710a1359191f2518ce56deaa51"
+        },
+        "TokenPocketCrossAttn": {
+          "sha256": "7f0d47ad7a6ebae30f3976f45a5ba53746fb3d91633273e616e127546d895b28",
+          "ast_sha256": "413fa9cae7dd5bcb11b75eb3d1afb05b2934d1946ea146463bfdad61c3289831",
+          "original_selected_node_sha256": "7f0d47ad7a6ebae30f3976f45a5ba53746fb3d91633273e616e127546d895b28"
+        },
+        "EpitopeConditionedFRCDRModel": {
+          "sha256": "f35cf9e6869252a9dfde61b8ca870b623753aee807cc9747fd15b92958dd42dd",
+          "ast_sha256": "94ac757c8fe0b03dd593414c91cec13306823421eaba39f8d83f10786b92db86",
+          "original_selected_node_sha256": "f35cf9e6869252a9dfde61b8ca870b623753aee807cc9747fd15b92958dd42dd"
+        }
+      }
+    }
+  },
+  "model_variants": {
+    "jm": {
+      "class": "ProteinMLMContrastModel",
+      "antigen_conditioned": false,
+      "forward_arguments": [
+        "input_ids",
+        "attention_mask",
+        "mask_pos"
+      ],
+      "real_checkpoint_parity_verified": false
+    },
+    "jm-epi": {
+      "class": "EpitopeConditionedFRCDRModel",
+      "antigen_conditioned": true,
+      "forward_arguments": [
+        "input_ids",
+        "attention_mask",
+        "mask_pos",
+        "graphs"
+      ],
+      "separate_real_checkpoint_validation": "See VALIDATION.md; this source-extraction record does not establish inference validation."
+    }
+  }
+}

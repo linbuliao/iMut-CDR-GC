@@ -1,0 +1,394 @@
+{
+  "schema": "imut-cdr-gc-source-manifest.v2",
+  "package_version": "0.2.0a2",
+  "scope": "Source, English usage documentation, portable examples, source provenance and reproducibility tests; no private weights, scientific datasets or internal work records",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 396,
+      "sha256": "e62520276a4767e2a6f07ec7a61c8d8bd1c9376662ea674eb8e74e86e6d4975a"
+    },
+    {
+      "path": "LICENSE_REVIEW.md",
+      "bytes": 1455,
+      "sha256": "eabceb62817ff6088364b6e7a9eac35ca21af09ab92284581d47987fac101d91"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4807,
+      "sha256": "422f3a555fea2887ca047bdc62d50309f4f82e82de7d6faa4a8b270bfdca2757"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 2142,
+      "sha256": "886059582035062892161ceac1baf6d2c1a18fd51c51e6444ec6d5a4317ec608"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4176,
+      "sha256": "6ab3965b210f8911334de737e1c55db0c1b2d0d2956af033eb8060fd0c2c513c"
+    },
+    {
+      "path": "docs/antigen_graph.md",
+      "bytes": 2123,
+      "sha256": "8cf24b38b56ac07115a186362f368a8166a11bdf6a0c9d08cbb6fa940235b741"
+    },
+    {
+      "path": "docs/folding.md",
+      "bytes": 7157,
+      "sha256": "7f8b7cd436298dd63dbc5cb20506f3b9373c432f03d99c0c213549df5495dcba"
+    },
+    {
+      "path": "docs/generation.md",
+      "bytes": 10233,
+      "sha256": "090a7071d2aca157de3c8f09ba080b66b0c94e75bae6ea424528f8d504ae6b51"
+    },
+    {
+      "path": "docs/naturalness.md",
+      "bytes": 11530,
+      "sha256": "697ef2994d99b555b21d8bb2adb9393800b844afd962eba01118938e05dd38b6"
+    },
+    {
+      "path": "docs/pipeline.md",
+      "bytes": 3573,
+      "sha256": "4a8e9be82e22dc90e973d0c44d559c4fd69357838c8927a6ee27e47536a58c9c"
+    },
+    {
+      "path": "docs/rebuilding.md",
+      "bytes": 8384,
+      "sha256": "6783a708d726177f3395d2d704a4523f651d757a4013d27153a28b244463886a"
+    },
+    {
+      "path": "docs/reproducibility.md",
+      "bytes": 3130,
+      "sha256": "c7054e4c6904010a1de84fe658f5a0a85c9f03510baaf70fc1dab25903154395"
+    },
+    {
+      "path": "docs/scoring.md",
+      "bytes": 9147,
+      "sha256": "6ae90edb844f6154cb73f2dda46ed6dc08d32d18d268527a589fd5f00504f5b7"
+    },
+    {
+      "path": "docs/status.md",
+      "bytes": 1663,
+      "sha256": "4deea33aaeddd4c7b6049e975a5750f78260da7a2fd8bc912c9b8ca99908fd4b"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 2300,
+      "sha256": "1e35c35a43c81c0607fd994fc7aeee88470c558fc0719eb270d8f8ce837b47c6"
+    },
+    {
+      "path": "examples/check_demo.py",
+      "bytes": 2682,
+      "sha256": "6e1d3dcb573368ae7c339d25b9762fab26280c913af1a6590c2e747306be0bd2"
+    },
+    {
+      "path": "examples/configs/README.md",
+      "bytes": 2379,
+      "sha256": "6e755f73b4f615e5b209b7704b3e14d62d74d28dd4ca5a9dce66eaf342bae11e"
+    },
+    {
+      "path": "examples/configs/deepcdr3d.json",
+      "bytes": 609,
+      "sha256": "8530cc314c0c2fa17be0f72583588ac75ce68e0e798a7b6cdc1452074e4fa2d7"
+    },
+    {
+      "path": "examples/configs/jm.json",
+      "bytes": 681,
+      "sha256": "e043fdb452ee3307262ea6829d63ef6905c15812c1d9f66e1aecf5bc36345d55"
+    },
+    {
+      "path": "examples/configs/jm_epi.json",
+      "bytes": 850,
+      "sha256": "b4b15511e2ef4f752c3e1cf61c4e47d5bbfee8953d835ab0a0c62acdb67e8b40"
+    },
+    {
+      "path": "examples/demo_pipeline.json",
+      "bytes": 536,
+      "sha256": "34eb4acaa94046458c22422e0aaf8c342a50642923aa7da23d47fdbbe90a7037"
+    },
+    {
+      "path": "examples/make_demo.py",
+      "bytes": 6710,
+      "sha256": "3469bb1db238c3806708181c6ebf299e0b52e74ef21f0c438aa09df8760bd5c0"
+    },
+    {
+      "path": "imut_cdr_gc/__init__.py",
+      "bytes": 254,
+      "sha256": "dd86bab528020837bc8cdbe94444500b87c7499ffb9e38b958f2b643f6107d63"
+    },
+    {
+      "path": "imut_cdr_gc/__main__.py",
+      "bytes": 128,
+      "sha256": "2ee251fef190366d33ec8087856c7b21ada935535a0546c70ed7fe36eb431119"
+    },
+    {
+      "path": "imut_cdr_gc/_likelihood_native.py",
+      "bytes": 7675,
+      "sha256": "fa3a402a726afc8e9a1935ec2215dcd35e55ebe64d1f24ec3514552c640a9983"
+    },
+    {
+      "path": "imut_cdr_gc/antigen_graph.py",
+      "bytes": 7403,
+      "sha256": "f52c1fa9e182c1322dcfbcc9113d6ac6831c69e1375c4cf9d5db3f41dcb88f60"
+    },
+    {
+      "path": "imut_cdr_gc/assets.py",
+      "bytes": 2305,
+      "sha256": "76b6531d1270c783ac10a7125a29f5537498d7c3c067f0e0db69babdf4165400"
+    },
+    {
+      "path": "imut_cdr_gc/cli.py",
+      "bytes": 13056,
+      "sha256": "87f7aef2ae5dac30184820260a5a1da2f3dbdbe5fe07d3d03a4fb4f0116d2936"
+    },
+    {
+      "path": "imut_cdr_gc/complexes.py",
+      "bytes": 10466,
+      "sha256": "dd8a0a6317a83cc0258f104c312a6db12fcf5f35b67d3c1412d2cb6bb2f4e9f1"
+    },
+    {
+      "path": "imut_cdr_gc/folding.py",
+      "bytes": 22095,
+      "sha256": "a1a087327ee78ec04bb44368f8756a621aedf7a50b7b527570e77332d564f483"
+    },
+    {
+      "path": "imut_cdr_gc/generation.py",
+      "bytes": 14735,
+      "sha256": "56a6af7b173ba49aa05e621f03acca0e914c15ad3ef00fd14829aa8ce54560ba"
+    },
+    {
+      "path": "imut_cdr_gc/models/__init__.py",
+      "bytes": 573,
+      "sha256": "5c5715e980f10f2b1241ee3cb0c2f17b0ac4dc0918374652cacbff74d7b75728"
+    },
+    {
+      "path": "imut_cdr_gc/models/antigen.py",
+      "bytes": 2535,
+      "sha256": "a9168ad3f765fcded0cc9ff768a18a566c7a5f7ef50533faccba7d9f96aaf2a0"
+    },
+    {
+      "path": "imut_cdr_gc/models/config.py",
+      "bytes": 3360,
+      "sha256": "6214e6140816a7150c14e02f9ea2fabab10ee038413ee8fc667ea0f913e52384"
+    },
+    {
+      "path": "imut_cdr_gc/models/fr_cdr.py",
+      "bytes": 17485,
+      "sha256": "d7c4ce28a7bd056354a5d167f4944a986578d8b5c45e6e4bf9129a85eb7fe1b0"
+    },
+    {
+      "path": "imut_cdr_gc/models/jm_epi.py",
+      "bytes": 8953,
+      "sha256": "dc070e151a52d111babf674e04d9638930e028b30dbc9381d0716aed884ea0a9"
+    },
+    {
+      "path": "imut_cdr_gc/models/loading.py",
+      "bytes": 12427,
+      "sha256": "b4845b86a3101b7179cb58281ff2f8381e7be245805148cda2ba1ad3696fa244"
+    },
+    {
+      "path": "imut_cdr_gc/models/source_identity.json",
+      "bytes": 7018,
+      "sha256": "f2086e73484ba4278144be041a186c93cddcf6edcf4f4190fc2088c0b94de599"
+    },
+    {
+      "path": "imut_cdr_gc/naturalness.py",
+      "bytes": 32149,
+      "sha256": "81172a4ec9f0e4b9363edfe06067dc083939fa737b059487ea1c0528506d97a9"
+    },
+    {
+      "path": "imut_cdr_gc/pipeline.py",
+      "bytes": 8266,
+      "sha256": "14e608ced2d6e4c4a7afa9dcb7ad6b07caa131954d2f757cef7e729bdf6ad780"
+    },
+    {
+      "path": "imut_cdr_gc/preparation.py",
+      "bytes": 4615,
+      "sha256": "d38690639fa281d1e7c0d00ca072b561cc49667bea5445087a65d7027d5908d8"
+    },
+    {
+      "path": "imut_cdr_gc/rebuilding.py",
+      "bytes": 27292,
+      "sha256": "63f89cb5747253452142136150ec09cd2e8dcfa6b15461d97a745845ef734fab"
+    },
+    {
+      "path": "imut_cdr_gc/records.py",
+      "bytes": 3459,
+      "sha256": "32c82cd9923a9a79ab4475f4d932c7b497a2a6e6f79dbd79a2d719f81753b79d"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/__init__.py",
+      "bytes": 188,
+      "sha256": "84b2251df10793306120120e0de950f404aff5f5dc39db7b44ca6571be32dc48"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/__init__.py",
+      "bytes": 80,
+      "sha256": "413eddf04fb3201c59a5825b215401548c344cd591a49b4b0c3221a0f5a05220"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/amino_acid_vectors_20dim.json",
+      "bytes": 10447,
+      "sha256": "5ee8b61fa0f9ca2de80bc6ac85d3ce16a69434c179a93d85134cb5bd906a3fec"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/amino_acid_vectors_30dim.json",
+      "bytes": 14770,
+      "sha256": "63e28f738d916185491322e349bf8873daae09df8cdb59c11ca1893d7724bf64"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/deepcdr3d_graph.py",
+      "bytes": 3209,
+      "sha256": "3051e79130975c9569daa04578efa455e3feb90aac9350ccd6befe29ef5722ee"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/deepcdr3d_model.py",
+      "bytes": 2257,
+      "sha256": "c075e16d4cba3bbc55cff100d9595d5ad5d89bf97b05668c92a5413ef3f6e08f"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/esm2_graph.py",
+      "bytes": 3333,
+      "sha256": "8a2892d8e98285107b7744e4270c3009b44b73ca07283f748f079505bafbe51d"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/_vendor/esm2_model.py",
+      "bytes": 1899,
+      "sha256": "dac341b44d6446c0481cce2e5ea3f6151ad635877b23b51d99117f36ac73788d"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/backend.py",
+      "bytes": 6590,
+      "sha256": "deaa868ec76d13850ca861d661e75f057cdd8cc2386d7f8ce69e6d30e238a050"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/common.py",
+      "bytes": 8105,
+      "sha256": "5a8893c01168a70e12754de847fb425d9e68dcc96b7d82b5883d98b6ae83e3ba"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/esm2.py",
+      "bytes": 2761,
+      "sha256": "b75921d9767e75a58317fad324f242c68d5cfc52923a624e12bdd518b309f3ae"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/native_cdr95.py",
+      "bytes": 5433,
+      "sha256": "b3ca91217e298a25d6a65289b70bab740115da7de93f476df9dcca825bf46562"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/native_structure.py",
+      "bytes": 4495,
+      "sha256": "9ad1b673d692baf32855474bdb00a301fa7d2804aa707c8fe2709c7147fc4bba"
+    },
+    {
+      "path": "imut_cdr_gc/scoring/source_identity.json",
+      "bytes": 7080,
+      "sha256": "eaff07a83de7e55e485e4e8d2e14bf2340d0c0827091ddbb725f3fd6a910e772"
+    },
+    {
+      "path": "imut_cdr_gc/selection.py",
+      "bytes": 9161,
+      "sha256": "452aebb95aee3be06c92f5b6c9ba0c69e7a88555bbc046ad1430ea6b04b23f4a"
+    },
+    {
+      "path": "imut_cdr_gc/workflow.py",
+      "bytes": 8788,
+      "sha256": "fe2ed36b4e37805530b71944acf2a7efb3b8dfdbb54ba5e29a1a0a52d2f899cb"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1069,
+      "sha256": "7de2c3027bd9b7aa6fd952696badcbf6a39c45ed2f9f9af4beedc6412651afab"
+    },
+    {
+      "path": "tests/test_antigen_graph.py",
+      "bytes": 3454,
+      "sha256": "20ca4558a0f2da2568b3c3924ae8f3f41961eb4dfef6617426a82e948848c0bc"
+    },
+    {
+      "path": "tests/test_folding_contract.py",
+      "bytes": 17877,
+      "sha256": "2990e70dc4993754cdf5cb325f1ac9e431a48a0ac28446acb84d31c7c4fef1da"
+    },
+    {
+      "path": "tests/test_generation_checkpoint_layout.py",
+      "bytes": 9437,
+      "sha256": "1e963c801763495b27e72887e5d64717d5d7e40a06bce02b18a5ab6392732a5c"
+    },
+    {
+      "path": "tests/test_generation_cli_integration.py",
+      "bytes": 12767,
+      "sha256": "705899f326c98da590df7587be6e008367b4fea8f8ae58ba088fd9b049f3de31"
+    },
+    {
+      "path": "tests/test_generation_jm.py",
+      "bytes": 11765,
+      "sha256": "00b5b8b0b7e965409237ac205138a9662b0ea48f415d4f8659803416e98ec1d5"
+    },
+    {
+      "path": "tests/test_generation_models.py",
+      "bytes": 10250,
+      "sha256": "bb723da988c6eb6aba28c4b765206276963e8dbe36ea3384168c42fa5c8b273d"
+    },
+    {
+      "path": "tests/test_generation_native_reference.py",
+      "bytes": 30169,
+      "sha256": "37176a5e23ac2d35c5ac0da1f7130e8e52cefe5b77434c7238af4978e7d19ec9"
+    },
+    {
+      "path": "tests/test_generation_proposals.py",
+      "bytes": 10650,
+      "sha256": "bf3de346e04ab5957890308099ed7ea777d98aaa3ee3d0e5f7e3a4d3a75571bd"
+    },
+    {
+      "path": "tests/test_naturalness.py",
+      "bytes": 2660,
+      "sha256": "e0cd32a74a1d423b40b6b13df59706da1eb7f1edbe21db2f5fdfc9b88535250c"
+    },
+    {
+      "path": "tests/test_naturalness_contract.py",
+      "bytes": 29372,
+      "sha256": "48d5280b0d7b73a97ec3321e818f130d4ce1783430c98dc687cacc55e60106ab"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 6880,
+      "sha256": "4a37c33edc3df7baf248cccac71c3dc6ca6d4fe55bbc1bc79711d44a36a0afd1"
+    },
+    {
+      "path": "tests/test_rebuilding_contract.py",
+      "bytes": 21728,
+      "sha256": "9258a3290a05807d5e326b7b5abaa8ae410fa5727c5cc68bfe0c5c73bd9e1453"
+    },
+    {
+      "path": "tests/test_scoring_contracts.py",
+      "bytes": 12296,
+      "sha256": "47c2e76874d800a35bcc7c92b749b878bd2a4d0e015047795509543aa8351dc8"
+    },
+    {
+      "path": "tests/test_scoring_source_identity.py",
+      "bytes": 4041,
+      "sha256": "a588524a5bc4226bbb28918f09976390ba994001e79ad37286243545077a8c94"
+    },
+    {
+      "path": "tests/test_scoring_workflow_identity.py",
+      "bytes": 7325,
+      "sha256": "39db2dabd9acd8134a67e9bb26686c512d07136ef1f99124b693678136d8b67e"
+    },
+    {
+      "path": "tests/test_stage_input_identity.py",
+      "bytes": 3697,
+      "sha256": "50dafb859acc50e4003f7a232b6067b3e3823609d8e29d1fa001ed2f18898ed4"
+    },
+    {
+      "path": "tests/test_workflow_contract.py",
+      "bytes": 17726,
+      "sha256": "4e7fdf27c0a58972ed104fb56579748d17996685e69dab08121235942d6bc354"
+    }
+  ],
+  "file_count_excluding_this_manifest": 77,
+  "bytes_excluding_this_manifest": 594671
+}

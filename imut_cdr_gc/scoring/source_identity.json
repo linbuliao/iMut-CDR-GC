@@ -1,0 +1,124 @@
+{
+  "schema": "portable_scoring_source_identity_v1",
+  "scope": "Internal source preparation; not public redistribution permission or a learned-quality benchmark",
+  "vendor_files": [
+    {
+      "target": "_vendor/deepcdr3d_model.py",
+      "target_sha256": "c075e16d4cba3bbc55cff100d9595d5ad5d89bf97b05668c92a5413ef3f6e08f",
+      "source": "deepcdr_3d/model.py",
+      "source_sha256": "c075e16d4cba3bbc55cff100d9595d5ad5d89bf97b05668c92a5413ef3f6e08f",
+      "transformation": "byte_identical_copy"
+    },
+    {
+      "target": "_vendor/deepcdr3d_graph.py",
+      "target_sha256": "3051e79130975c9569daa04578efa455e3feb90aac9350ccd6befe29ef5722ee",
+      "source": "deepcdr_3d/graph.py",
+      "source_sha256": "3051e79130975c9569daa04578efa455e3feb90aac9350ccd6befe29ef5722ee",
+      "transformation": "byte_identical_copy"
+    },
+    {
+      "target": "_vendor/amino_acid_vectors_30dim.json",
+      "target_sha256": "63e28f738d916185491322e349bf8873daae09df8cdb59c11ca1893d7724bf64",
+      "source": "deepcdr_3d/amino_acid_vectors.json",
+      "source_sha256": "63e28f738d916185491322e349bf8873daae09df8cdb59c11ca1893d7724bf64",
+      "transformation": "byte_identical_copy"
+    },
+    {
+      "target": "_vendor/esm2_model.py",
+      "target_sha256": "dac341b44d6446c0481cce2e5ea3f6151ad635877b23b51d99117f36ac73788d",
+      "source": "deepcdr_esm2/interface.py",
+      "source_sha256": "4c42fcfb0de0e3e0b1359e799f425d28f1d9ddb43b98b99e5dba1212492d73aa",
+      "transformation": "Exact selected AST definitions with minimal imports; no original scorer, paths or asset loading",
+      "ast_sha256": {
+        "MAX_SEQ_LEN": "5af2199b5bb8bbf114c4cc4e7bf296fc58ea5a815866522be985f95d614073dd",
+        "GCNNet": "d748aabdc1a4102c9f3cf02ea953b0d3928596b58c38bb4a2302b40d1a004e41"
+      }
+    },
+    {
+      "target": "_vendor/esm2_graph.py",
+      "target_sha256": "8a2892d8e98285107b7744e4270c3009b44b73ca07283f748f079505bafbe51d",
+      "source": "deepcdr_esm2/interface.py",
+      "source_sha256": "4c42fcfb0de0e3e0b1359e799f425d28f1d9ddb43b98b99e5dba1212492d73aa",
+      "transformation": "Exact selected AST definitions with minimal imports; no original scorer, paths or asset loading",
+      "ast_sha256": {
+        "MAX_SEQ_LEN": "5af2199b5bb8bbf114c4cc4e7bf296fc58ea5a815866522be985f95d614073dd",
+        "GRAPH_CUTOFF": "27d2bfb65a295db252f5df82869c9b194fcde21d76c0ca223c490a4aa761b348",
+        "AA_3TO1": "66fa1372492fa2c5ed863bd0eb3c5b515efeabad361862f389955b301b5d8a9c",
+        "encode_cdr_sequence": "c86be2301fe19a38c3c44e65a3608dd23232d8fce7b8c8ee0d9bbb0ae6938990",
+        "_graph_labels_from_pdb": "984f6142973cf9249be9acc9e234afcc5630d074c17951eb6727e7a5a28bcb88",
+        "build_graph_from_pdb": "b95ad13409348ce87333f39fecd19ff766f50b090253f503d9f6183d955cecf9"
+      }
+    },
+    {
+      "target": "_vendor/amino_acid_vectors_20dim.json",
+      "target_sha256": "5ee8b61fa0f9ca2de80bc6ac85d3ce16a69434c179a93d85134cb5bd906a3fec",
+      "source": "deepcdr_esm2/amino_acid_vectors_20dim.pkl",
+      "source_sha256": "c6f59a88a145219345b4cbc244f12ea27481d491b85e4c039007d8ea50b38974",
+      "transformation": "Inert symbolic pickle parse; exact 20 float32 values per canonical AA; explicit zero X padding; no pickle constructors executed",
+      "numeric_float32_sha256": {
+        "A": "207c332709039b8b92ef151ced9d017decb182fc4ff2f5ebb986fe1156669fce",
+        "C": "0ad86d2b20563e22c10775ef2beccd4add7d0282a1e2808a90a7144979621e54",
+        "D": "dd58b166e6c0fd3a789c6f73332e167d2a1796d4c8c287d2e696c0040a4e6959",
+        "E": "b1e999a02d9c47a635ca49b1f55f538145b4a997e65e702efe887eb7e1af2084",
+        "F": "13bbd63de24b17dc1c12db8d0f177899f37d201f94e00146a2d3596077433250",
+        "G": "5f76eddf47fd3aa5941ad55040d122eb23d86fc3b5bd1c0519575e5aeb2365cc",
+        "H": "3a8d4f3905892fb2768f992d425307ee64e0e7fc405b9b49a54b75e20daef8c9",
+        "I": "dfdb93020a3b47aeb58afae55c745a57bf096966f05a0bdf24ecb65782213596",
+        "K": "930a57ea1260bf590912268f8c22e781bbe84629e2433837e0b6a6efec576492",
+        "L": "7489a42d151f99e3f6400d5cd86362b8700c784391c951a494a1b7953ddc3cfb",
+        "M": "c68670c459df6c4c2cd553a8973b532ebef727c7a1364d8a679146477e9ee5a9",
+        "N": "53ed862c9b2bf33db9b5223ed82da5a9199ce37b00e9848526277215cb800c66",
+        "P": "3aebca70719b85bd4fee6788b02e667b3517ce26df08230285839dca6413d239",
+        "Q": "52ec3df31012b535e98aa11a9001816b9d010822999b44719f94bc7eb6807457",
+        "R": "c54e2e511a6faec3754480dd961463ff83a306065a4bb5250b10617ff438b5e0",
+        "S": "d4c883843c5f8ac5eea65e7aaca05cbead08af3c7b5ea57a003ce081921690fc",
+        "T": "1c3d0a4d32bc3279dc3c66737fe2ab5848be0a53c7c4c4fab7f20fab33610453",
+        "V": "4f52091832a1de29f8392150a7e4ccd75aa60c28f5db6a2d9c01ed2b89c5bb27",
+        "W": "3b6acff28f237fb1607fc74d689781499ee7d98d50b5b74f226119762a6165b3",
+        "Y": "50f4d138e874459889de02380ae287592e69f866648d47576cd66d3b1a2a60df"
+      },
+      "parser_source": "v1/inspect_torch_pickle_without_execution.py",
+      "parser_source_sha256": "0796d83c5b8353bec5041d9895c154fe9157848f6571f9d0bbd51c6857a1aa1e"
+    }
+  ],
+  "native_input_sources": [
+    {
+      "path": "v1/native_structure_scoring.py",
+      "sha256": "cc5028a9f11dd3a311c13bccc78a1a57f016dda26cf4eb8d41e0c98e4d7d3420"
+    },
+    {
+      "path": "v1/run_v3_native_order.py",
+      "sha256": "3294ae8f5f29be888b0037f71cd5a43afe387ab26f5a66433b76f88cd77d5ff4"
+    },
+    {
+      "path": "deepcdr_esm2/cdr_extract.py",
+      "sha256": "7ed18b19bb0a423d6191d99e3bfdfc1eec0b6d7def46aabd0809a43f7d99c826"
+    }
+  ],
+  "portable_deltas": [
+    "Import-safe model-only vendoring; no research-root imports, cluster paths or asset discovery",
+    "Explicit project-contained paths and exact SHA256 declarations before and after scoring",
+    "Actual full-chain aliases must agree; H/L native ANARCI list-index95 is derived rather than generation cdr_seq",
+    "3D actual-fold provenance, Chothia numbering and exact H/L/antigen atomic sequence checks",
+    "CPU only; safe weights_only strict state loading; no model download or score-cache reuse",
+    "Finite typed measurements; errors return null, not zero or threshold rejection",
+    "JSON features must match exact pinned native numeric vectors"
+  ],
+  "unchanged_math": [
+    "Antigen-first 30-feature dual-GCN and Chothia CDR graph",
+    "20-feature GCNNet, 95x20 target encoding and train_like single-direction CA graph",
+    "H-first ANARCI list windows (27..38,56..65,105..117), widths 10/10/25 and X separators"
+  ],
+  "rights": {
+    "weights_bundled": false,
+    "project_license_selected": false,
+    "third_party_redistribution_permission_established": false,
+    "public_push_performed": false
+  },
+  "limitations": [
+    "CPU random-state fixtures exercise implementation only; not real-weight or biological validation",
+    "No complete four-model common-label performance benchmark",
+    "No corrected-library or scientific-eligibility clearance",
+    "Historical insertion-code node-label convention retained; changing it requires a separately reviewed protocol"
+  ]
+}

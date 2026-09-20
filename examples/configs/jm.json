@@ -1,0 +1,24 @@
+{
+  "generator": {
+    "model_dir": "assets/esm2_config_and_tokenizer",
+    "checkpoint": {
+      "path": "assets/jm/model.pt",
+      "sha256": "REPLACE_WITH_ACTUAL_CHECKPOINT_SHA256"
+    },
+    "asset_sha256": {
+      "config.json": "REPLACE_WITH_ACTUAL_CONFIG_SHA256",
+      "vocab.txt": "REPLACE_WITH_ACTUAL_VOCAB_SHA256",
+      "tokenizer_config.json": "REPLACE_WITH_ACTUAL_TOKENIZER_CONFIG_SHA256",
+      "special_tokens_map.json": "REPLACE_WITH_ACTUAL_SPECIAL_TOKENS_SHA256"
+    }
+  },
+  "batch_size": 1,
+  "sampling": {
+    "device": "cpu",
+    "precision": "float32",
+    "temperature": 1.0,
+    "top_k": 0,
+    "parental_residue_logit_penalty": 0.0,
+    "seed": 123
+  }
+}
