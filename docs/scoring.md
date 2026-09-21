@@ -104,7 +104,7 @@ files are confined to the working project's `.cache/tmp/` and cleaned on exit.
 A `numberer=` argument exists for deterministic fixtures/integration; results
 mark it as caller-supplied with scientific equivalence **not** asserted.
 
-## DeepCDR-3D: actual fold, correct branch order
+## DeepCDR-3D: antibody fold and antigen graph
 
 3D records additionally require `pdb_path`, `pdb_sha256`, `numbering: "chothia"`
 and this explicit folding provenance:
@@ -120,19 +120,18 @@ and this explicit folding provenance:
 }
 ```
 
-Place that object in `record["fold_provenance"]`. The PDB must contain exactly
-the declared mutant H and L atomic sequences; neither swapped chains nor an
-unchanged founder fold can stand in for a different mutant. Founder-based
-side-chain reconstructions are explicitly refused as actual folds. The caller
-must supply a truly folded, Chothia-numbered structure with honest provenance;
-the scorer does not run a folding model or independently certify that provenance.
+Place that object in `record["fold_provenance"]`. Supply a Chothia-numbered
+antibody fold with recorded provenance and atomic H/L sequences matching the
+candidate. The scorer rejects chain mismatches and founder-based side-chain
+reconstructions. Folding is a separate step; the scorer validates the supplied
+sequence and file identities.
 
 The 30-feature dual-GCN is called with named arguments: the **antigen pocket**
 enters the first GCN branch and the **actual antibody CDR-context graph** enters
 the second. Contacts are strictly <5 Å with the original directed-edge rule.
 The historical Chothia CDR-context windows are H26–35/H50–65/H95–102 and
-L24–34/L50–56/L89–97. No inter-partner docking pose enters this dual-graph
-network. It is not interchangeable with a full-complex pose model.
+L24–34/L50–56/L89–97. The network encodes the two partners separately and
+does not use an inter-partner docking pose.
 
 ## Outputs and selection
 

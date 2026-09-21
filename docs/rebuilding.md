@@ -81,8 +81,8 @@ This implementation preserves its fast-path operation order:
 1. Read ATOM records and renumber each chain sequentially, keeping an explicit
    original residue-number/insertion-code → sequential-index mapping. Insertion
    residues remain distinct; their original labels are recorded, not collapsed.
-   HETATM waters/ligands are excluded, with their count reported. This is a
-   protein ATOM complex, not a promise to preserve every founder file record.
+   HETATM waters/ligands are excluded, with their count reported; the output
+   contains the protein ATOM complex.
 2. Diff the actual full H/L sequences; apply the heavy mutations, then light
    mutations using `PDBFixer.applyMutations`.
 3. Call `findMissingResidues`, set `missingResidues={}`, then
@@ -97,9 +97,8 @@ manifest. The parent's environment is untouched. This differs from the native
 fast-path constructor's unspecified platform. Do not describe it as already
 numerically equivalent to that historical runtime.
 
-There is no **explicit final** minimization. PDBFixer atom/hydrogen placement
-can itself perform energy optimization; “no energy operation” would be wrong.
-There is no clash-free or physically relaxed structure guarantee.
+PDBFixer atom/hydrogen placement can perform energy optimization. The workflow
+omits separate final whole-complex minimization; residual clashes may remain.
 
 Afterward, actual PDB residues must exactly match mutant H/L plus declared
 constant suffixes and all fixed antigen sequences. Every standard residue must
@@ -128,8 +127,7 @@ The function returns `(rows, receipt)` and writes:
 On failure, `failure.json` marks the attempt incomplete; any partial files are
 not a delivery. Do not merge them into a final library by file existence alone.
 Successful rows can be passed directly to `complexes.export_library` for a
-separate one-to-one library export. Neither command marks corrected V3 selection
-complete or promotes any production checkpoint.
+one-to-one library export. Selection status is managed by the calling pipeline.
 
 ## Validation status and native checks
 
