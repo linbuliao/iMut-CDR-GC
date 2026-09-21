@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "imut-cdr-gc"
-version = "0.2.0a2"
+version = "0.2.0a3"
 description = "Explicit joint CDR generation, native interaction scoring and traceable antibody libraries"
 readme = "README.md"
 requires-python = ">=3.11"

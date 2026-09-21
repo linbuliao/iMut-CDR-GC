@@ -57,7 +57,7 @@ def parser():
     likelihood.add_argument("--device", default="cpu")
     likelihood.add_argument("--batch-size", type=int, default=64)
     likelihood.add_argument("--output-dir", required=True)
-    select = commands.add_parser("select", help="Apply JM-Epi reference P5 and common DeepCDR floor; deterministic Top-k")
+    select = commands.add_parser("select", help="Apply JM-Epi eligibility, then policy-selected Top-k or random sampling")
     select.add_argument("--input", required=True)
     select.add_argument("--policy", required=True)
     select.add_argument("--excluded", help="Existing full H/L sequence pairs to exclude")

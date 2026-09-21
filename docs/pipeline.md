@@ -58,6 +58,8 @@ Connect stages by declaring the earlier output file as the next input. Nothing
 is inferred from a filename: folds need sequence/structure identity, scores
 retain their model/input identity, and export needs actual matching PDB files.
 See [scoring](scoring.md) and [reconstruction](rebuilding.md) for these formats.
+Selection supports [score-ranked Top-k or seeded random sampling](selection.md)
+from the complete eligible pool; declare the method in the selection policy.
 
 JM generation is unscreened. Only JM-Epi candidates may enter the supplied
 likelihood/P5/GC selection stages. External comparison methods may receive

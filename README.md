@@ -65,6 +65,7 @@ is the default. Supply your model and input paths in the
 
 Guides: [generation](docs/generation.md), [antigen graphs](docs/antigen_graph.md),
 [DeepCDR scoring](docs/scoring.md), [naturalness](docs/naturalness.md),
+[selection and random sampling](docs/selection.md),
 [folding](docs/folding.md), [complex reconstruction](docs/rebuilding.md), and
 [reproducibility](docs/reproducibility.md).
 

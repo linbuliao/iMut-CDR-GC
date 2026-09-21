@@ -4,4 +4,4 @@ Heavy model dependencies are imported only when their corresponding operation
 is called. Scientific data and trained weights are distributed separately.
 """
 
-__version__ = "0.2.0a2"
+__version__ = "0.2.0a3"

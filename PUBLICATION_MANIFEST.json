@@ -1,6 +1,6 @@
 {
   "schema": "imut-cdr-gc-source-manifest.v2",
-  "package_version": "0.2.0a2",
+  "package_version": "0.2.0a3",
   "scope": "Source, English usage documentation, portable examples, source provenance and reproducibility tests; no private weights, scientific datasets or internal work records",
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5012,
-      "sha256": "c94d333deb57620f4f62dd69aa94946f1ef3c1b4995da6450741f05252da0fde"
+      "bytes": 4633,
+      "sha256": "b661265ee633309e5a08df217ae48dc85621f1eb7be70143cac2f86c2fd6cb05"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -25,8 +25,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4176,
-      "sha256": "6ab3965b210f8911334de737e1c55db0c1b2d0d2956af033eb8060fd0c2c513c"
+      "bytes": 4199,
+      "sha256": "42d5af8331025b2460be603a32eebda9416b466a696c79a40a31c1bfff610aa0"
     },
     {
       "path": "docs/antigen_graph.md",
@@ -35,43 +35,48 @@
     },
     {
       "path": "docs/folding.md",
-      "bytes": 7157,
-      "sha256": "7f8b7cd436298dd63dbc5cb20506f3b9373c432f03d99c0c213549df5495dcba"
+      "bytes": 7109,
+      "sha256": "731e24398aaa6e0fedd0d754067583501121317cb933843bdd93a136561b85e9"
     },
     {
       "path": "docs/generation.md",
-      "bytes": 10233,
-      "sha256": "090a7071d2aca157de3c8f09ba080b66b0c94e75bae6ea424528f8d504ae6b51"
+      "bytes": 9863,
+      "sha256": "fdfd3b24680c12b705fc9fab74af174eeb06a84666f0d8a34b21722ea5771eca"
     },
     {
       "path": "docs/naturalness.md",
-      "bytes": 11530,
-      "sha256": "697ef2994d99b555b21d8bb2adb9393800b844afd962eba01118938e05dd38b6"
+      "bytes": 10540,
+      "sha256": "a17fec71691c1a20b98407c1dc191596072ad69ff23e32d24825a5069495e7ac"
     },
     {
       "path": "docs/pipeline.md",
-      "bytes": 3573,
-      "sha256": "4a8e9be82e22dc90e973d0c44d559c4fd69357838c8927a6ee27e47536a58c9c"
+      "bytes": 3730,
+      "sha256": "c28e61847f4dbcd2c772e2deec3ea9d0e08cce9834f77a3de18d383279e8dd33"
     },
     {
       "path": "docs/rebuilding.md",
-      "bytes": 8384,
-      "sha256": "6783a708d726177f3395d2d704a4523f651d757a4013d27153a28b244463886a"
+      "bytes": 8206,
+      "sha256": "d1e6e10cf66520dc03a374fe6d51ac18dcde12a1d03f0e231d7df73df2c3c7df"
     },
     {
       "path": "docs/reproducibility.md",
-      "bytes": 3130,
-      "sha256": "c7054e4c6904010a1de84fe658f5a0a85c9f03510baaf70fc1dab25903154395"
+      "bytes": 2818,
+      "sha256": "c6fffbe64e18d79fe50f988c6f3653a8b0afdd2b6f1b7a8c1b516efe4e5ff1cb"
     },
     {
       "path": "docs/scoring.md",
-      "bytes": 9147,
-      "sha256": "6ae90edb844f6154cb73f2dda46ed6dc08d32d18d268527a589fd5f00504f5b7"
+      "bytes": 8966,
+      "sha256": "eddf13a95eac76a76e21b10e062ebcc5e584b2015efbe35126f8d1993f285f86"
+    },
+    {
+      "path": "docs/selection.md",
+      "bytes": 3262,
+      "sha256": "fbf2596d2b35d57717e169acd1a62f14d0f714839310275ff9a376ccbbfd4ea1"
     },
     {
       "path": "docs/status.md",
-      "bytes": 1663,
-      "sha256": "4deea33aaeddd4c7b6049e975a5750f78260da7a2fd8bc912c9b8ca99908fd4b"
+      "bytes": 1536,
+      "sha256": "e53017a158d28279b5d4738259de2e54040ec86a72d7145bc64e15c64d575546"
     },
     {
       "path": "examples/README.md",
@@ -116,7 +121,7 @@
     {
       "path": "imut_cdr_gc/__init__.py",
       "bytes": 254,
-      "sha256": "dd86bab528020837bc8cdbe94444500b87c7499ffb9e38b958f2b643f6107d63"
+      "sha256": "1b1d249686d775d37bd1948a23409501f1aa189a3c9c144cbebff1fff8ce49f8"
     },
     {
       "path": "imut_cdr_gc/__main__.py",
@@ -141,7 +146,7 @@
     {
       "path": "imut_cdr_gc/cli.py",
       "bytes": 13056,
-      "sha256": "87f7aef2ae5dac30184820260a5a1da2f3dbdbe5fe07d3d03a4fb4f0116d2936"
+      "sha256": "6aa0d29b70d54b07ff46a452aac474adceae3e67b943c7eedcfecfd87bbce1e0"
     },
     {
       "path": "imut_cdr_gc/complexes.py",
@@ -290,8 +295,8 @@
     },
     {
       "path": "imut_cdr_gc/selection.py",
-      "bytes": 9161,
-      "sha256": "452aebb95aee3be06c92f5b6c9ba0c69e7a88555bbc046ad1430ea6b04b23f4a"
+      "bytes": 12799,
+      "sha256": "811024e81587456770e798f9b9c9c99a1a0a2a2c741ba4b37cc024b82426e502"
     },
     {
       "path": "imut_cdr_gc/workflow.py",
@@ -301,7 +306,7 @@
     {
       "path": "pyproject.toml",
       "bytes": 1069,
-      "sha256": "7de2c3027bd9b7aa6fd952696badcbf6a39c45ed2f9f9af4beedc6412651afab"
+      "sha256": "669d038439ad4710bd75b4034ad0d234561a8c3546483164fbcd9075f88f8766"
     },
     {
       "path": "tests/test_antigen_graph.py",
@@ -359,6 +364,11 @@
       "sha256": "4a37c33edc3df7baf248cccac71c3dc6ca6d4fe55bbc1bc79711d44a36a0afd1"
     },
     {
+      "path": "tests/test_random_selection.py",
+      "bytes": 8527,
+      "sha256": "57e966b4a4dd10ae93a732dc6dca371ebe4104cff4d260939b394d59de860a3b"
+    },
+    {
       "path": "tests/test_rebuilding_contract.py",
       "bytes": 21728,
       "sha256": "9258a3290a05807d5e326b7b5abaa8ae410fa5727c5cc68bfe0c5c73bd9e1453"
@@ -389,6 +399,6 @@
       "sha256": "4e7fdf27c0a58972ed104fb56579748d17996685e69dab08121235942d6bc354"
     }
   ],
-  "file_count_excluding_this_manifest": 77,
-  "bytes_excluding_this_manifest": 594876
+  "file_count_excluding_this_manifest": 79,
+  "bytes_excluding_this_manifest": 607898
 }

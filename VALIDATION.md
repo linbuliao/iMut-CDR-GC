@@ -5,7 +5,7 @@ agreement. They use CPU fixtures and mocks unless stated otherwise.
 
 ## Completed installation checks
 
-The portable source built an `imut_cdr_gc-0.2.0a2` wheel offline. It installed in
+The portable source built an `imut_cdr_gc-0.2.0a3` wheel offline. It installed in
 a separate virtual environment, and the installed package, scoring, folding,
 rebuilding and naturalness interfaces imported successfully. Both command-line
 help entry points worked. The basic imports did not import Torch. The wheel
@@ -16,8 +16,8 @@ Python 3.10 check below. The package still declares Python >=3.11.
 
 ## Test status
 
-The full collected suite exited successfully: **247 passed, four skipped, no
-failures or errors** (251 collected). Source identities were unchanged during
+The full collected suite exited successfully: **273 passed, four skipped, no
+failures or errors** (277 collected). Source identities were unchanged during
 the run. The four skipped checks require optional inputs or dependencies:
 
 - One naturalness oracle requires an original research-source layout that is
@@ -36,6 +36,17 @@ The completed suite used Python 3.13.5, NumPy 2.1.3, Torch 2.12.0,
 Transformers 4.46.3 and pytest 8.3.4, on CPU. These identify the software-test
 environment, not a validated replacement for each model's recorded inference
 environment.
+
+Random-selection tests verify exact canonical hash priorities, seed replay,
+score-independent sampling, duplicate handling, earlier-library exclusions,
+selection labels, incomplete pools and preservation of the V3 lineage gate.
+Score-ranked selection remains compatible with existing configurations.
+
+A separate, read-only replay checked the public hash-priority function against
+all 104,314 records in the frozen study pools. All nine 2,000-pair samples
+matched the original membership, order and source provenance exactly, and the
+original pools and libraries retained their hashes. This validates the lottery
+given those pools, not their eligibility assembly or the full research pipeline.
 
 The documented no-model quickstart also completed: eight synthetic records
 produced four eligible records, three unique eligible sequences and two
