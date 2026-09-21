@@ -16,16 +16,13 @@ restricted to JM-Epi; a JM model cannot be relabelled as an Epi candidate.
 
 The asset and graph examples below describe JM-Epi unless stated otherwise.
 
-The public model definitions are extracted from the exact FR-v1 and JM-Epi
-sources bound by the existing native V3 protocols. They do not import research
-trainers, create training directories, read datasets, select GPUs, seed global
-RNGs or change environment variables at import. `models/source_identity.json`
-records the source identities and hashes of the selected original model nodes.
+The model definitions come from the FR-v1 and JM-Epi sources used by the native
+V3 protocols. Their inference imports are side-effect-free;
+`models/source_identity.json` records the original source identities and hashes.
 
-This is an inference interface, **not** a reproduction of training or a completed
-90,000-record scientific release. The reference checkpoint has passed the
-single-input CPU check described in [VALIDATION.md](../VALIDATION.md); this is
-not full pipeline or GPU validation.
+The reference checkpoint passed the single-input CPU numerical check in
+[VALIDATION.md](../VALIDATION.md). Validation of training, GPU inference and
+the full portable pipeline remains outstanding.
 
 ## Assets and construction
 
@@ -71,9 +68,9 @@ The default `EpiConfig` explicitly specifies the executed ESM2 1280-dimensional
 backbone, p1/c1/s3 recurrent blocks, 128-dimensional projection, 30-dimensional
 antigen features and the native pocket/cross-attention dimensions. Constructors
 also permit explicit configurations and encoder/tokenizer injection for testing.
-Changing dimensions is **not** a claim of equivalence to the released model.
-Precision and device are explicit; CPU is the default. No import or helper finds
-or claims an idle GPU. Mixed precision is not covered by the CPU parity receipt.
+Different dimensions require compatible weights and separate validation.
+Callers select precision and device explicitly; CPU is the default. Mixed
+precision has not been evaluated by the CPU numerical check.
 
 ### Antigen graph contract
 

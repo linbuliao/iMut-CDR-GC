@@ -40,8 +40,7 @@ environment.
 The documented no-model quickstart also completed: eight synthetic records
 produced four eligible records, three unique eligible sequences and two
 selected records. An independent checker verified counts, content hashes,
-score labels and cutoffs. Its scores are invented test values, not results
-from DeepCDR or a naturalness model.
+score labels and cutoffs. This quickstart uses synthetic scores.
 
 ## Reference-checkpoint CPU check
 
