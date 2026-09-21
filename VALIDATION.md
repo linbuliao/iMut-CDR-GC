@@ -1,8 +1,7 @@
-# Software validation boundaries
+# Software validation
 
-This is an alpha software release, not a completed scientific data release.
-The checks below use CPU-only fixtures and explicit mocks unless stated
-otherwise. They are software checks, not evidence of biological superiority.
+The checks below evaluate installation, software contracts and numerical
+agreement. They use CPU fixtures and mocks unless stated otherwise.
 
 ## Completed installation checks
 
@@ -24,7 +23,7 @@ the run. The four skipped checks require optional inputs or dependencies:
 - One naturalness oracle requires an original research-source layout that is
   not distributed in this repository.
 - Three graph/model checks require `torch_geometric`, which was absent from
-  this test environment. These three checks are not claimed as validated here.
+  this test environment.
 
 The suite covers antigen graphs, folding and reconstruction contracts,
 generation CLI/model/proposal contracts, JM versus JM-Epi model identity,
@@ -58,19 +57,13 @@ were all zero. Source and asset identities were unchanged.
 This used one fixed 277-position founder, one ten-site query and a synthetic
 four-node antigen graph. It generated no sequences and did not validate real
 antigen preprocessing, sampling, mixed precision or an end-to-end library.
-It is not a Python 3.10 wheel-installation test. Per-call model identity does
-not automatically claim a new independent parity check for every later input.
 
-## What these checks do not establish
+## Remaining validation
 
-Passing synthetic tests does not by itself establish real-checkpoint compatibility,
-physical validity of a reconstructed complex, benchmark superiority, predictive
-accuracy, or a completed 90,000-member delivery. The separate real-weight
-check has the single-input scope described above. There is no partial state
-loading or replacement of missing learned parameters. Native
-asset validation limits for folding and rebuilding remain in their guides.
-Historical JM learned-checkpoint inference, model training, and a full
-production V3 iteration schedule have not been reproduced by this release.
+The real-weight numerical check covers the single JM-Epi input described
+above. Validation with learned JM weights, model training and a complete V3
+iteration schedule remains outstanding for this portable release. Folding
+and reconstruction checks are described in their respective guides.
 
 See [scientific status](docs/status.md) for ongoing comparisons and paused MD,
 and [license review](LICENSE_REVIEW.md) before redistribution.

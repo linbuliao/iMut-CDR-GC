@@ -27,7 +27,6 @@ DeepCDR outputs are computational scores, not measured affinity or specificity.
 AbNatiV2 is a human-repertoire compatibility measure, not universal nativeness.
 Sequence/structure correspondence does not establish stability or binding.
 
-The repository contains no molecular-dynamics results, no MD-selected library
-and no prospective experimental validation. Supplying source code does not
-certify a complete scientific dataset or its claims. Asset permissions and
-third-party terms remain separate from software verification.
+Molecular-dynamics and prospective experimental validation are outside this
+release. Consult the component guides for asset requirements and third-party
+licenses.
