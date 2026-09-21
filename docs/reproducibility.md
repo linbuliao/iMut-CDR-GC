@@ -4,6 +4,11 @@ This repository provides source code and inference interfaces. Learned
 inference requires locally supplied checkpoints; training datasets and study
 data are separate from the software distribution.
 
+The evaluated JM, JM-Epi and DeepCDR-3D weights are publicly available in a
+[single pinned model release](models.md), including configuration, tokenizer,
+feature files and SHA256 manifests. Download only the components needed for
+your task into your project before running inference.
+
 ## Component map
 
 | Component | Source | Entry/config | Main software tests |

@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4633,
-      "sha256": "b661265ee633309e5a08df217ae48dc85621f1eb7be70143cac2f86c2fd6cb05"
+      "bytes": 4872,
+      "sha256": "be24ba01bd8e53c6523f898363461910af32ababe8ffa7583a1f4657906ec76a"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -44,6 +44,11 @@
       "sha256": "fdfd3b24680c12b705fc9fab74af174eeb06a84666f0d8a34b21722ea5771eca"
     },
     {
+      "path": "docs/models.md",
+      "bytes": 2730,
+      "sha256": "7c0d799a8cf30cf96f58727dddd03b28bfcaf228cec47154dfd34f53c0656be4"
+    },
+    {
       "path": "docs/naturalness.md",
       "bytes": 10540,
       "sha256": "a17fec71691c1a20b98407c1dc191596072ad69ff23e32d24825a5069495e7ac"
@@ -60,8 +65,8 @@
     },
     {
       "path": "docs/reproducibility.md",
-      "bytes": 2818,
-      "sha256": "c6fffbe64e18d79fe50f988c6f3653a8b0afdd2b6f1b7a8c1b516efe4e5ff1cb"
+      "bytes": 3103,
+      "sha256": "fd8834a9ecf91bc24bc32a63cd8fab53cd39a09e44bbd6b2b2a29334800cb1a5"
     },
     {
       "path": "docs/scoring.md",
@@ -75,8 +80,8 @@
     },
     {
       "path": "docs/status.md",
-      "bytes": 1536,
-      "sha256": "e53017a158d28279b5d4738259de2e54040ec86a72d7145bc64e15c64d575546"
+      "bytes": 1775,
+      "sha256": "546b1ddcdb710c69cf17fc4e1ec670c0de7dc1e9d280355183c0ee4dfe6802df"
     },
     {
       "path": "examples/README.md",
@@ -399,6 +404,6 @@
       "sha256": "4e7fdf27c0a58972ed104fb56579748d17996685e69dab08121235942d6bc354"
     }
   ],
-  "file_count_excluding_this_manifest": 79,
-  "bytes_excluding_this_manifest": 607898
+  "file_count_excluding_this_manifest": 80,
+  "bytes_excluding_this_manifest": 611391
 }

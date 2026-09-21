@@ -23,6 +23,10 @@ The package also provides likelihood analysis, antibody folding and founder-pose
 side-chain reconstruction. Learned weights and research datasets are
 **not included or downloaded automatically**.
 
+Trained **iMut-CDR-JM, iMut-CDR-JM-Epi and DeepCDR-3D** models are publicly
+available together on [Hugging Face](https://huggingface.co/linbuliao/iMut-CDR-GC).
+See [model downloads](docs/models.md) for a pinned release and configuration.
+
 ## Quickstart: no models or GPU required
 
 From a checkout of this repository, using Python 3.11 or later:
