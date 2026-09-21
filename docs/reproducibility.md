@@ -1,8 +1,8 @@
 # Reproducing the software
 
-This repository supports **source and inference-interface reproduction**, not
-retraining from the original training data or replaying a complete 90,000-record
-scientific release. Checkpoints and research datasets are separate assets.
+This repository provides source code and inference interfaces. Learned
+inference requires locally supplied checkpoints; training datasets and study
+data are separate from the software distribution.
 
 ## Component map
 
@@ -29,9 +29,9 @@ python -B -m pytest tests/test_pipeline.py tests/test_workflow_contract.py -p no
 ```
 
 The demo is fully synthetic and loads no model. Optional neural tests use small
-random-state CPU fixtures. Run the complete suite after installing its optional
-dependencies; a skipped optional source check is not a successful native-model
-validation. Current observed checks are described in [VALIDATION.md](../VALIDATION.md).
+random-state CPU fixtures. Install optional dependencies to run the complete
+suite. Native-model checks and their runtime scope are documented in
+[VALIDATION.md](../VALIDATION.md).
 
 ## Reproduce a learned inference
 
@@ -41,13 +41,10 @@ corresponding checkpoint and tokenizer locally; an unrelated checkpoint is not
 an equivalent replacement. Keep stage outputs and their provenance together.
 Changing any numerical setting requires a separately identified run.
 
-JM and JM-Epi have separate architectures and checkpoints. The real-weight
-fixed-input JM-Epi CPU check does not validate the historical JM checkpoint.
-Synthetic parity tests verify implementation behavior, not learned predictive
-accuracy, GPU bitwise equality, biological benefit or the availability of all
-training data.
+JM and JM-Epi have separate architectures and checkpoints. Numerical
+validation is specific to the tested model, weights and runtime.
 
-The pipeline is not an automatic V3 controller. Per-proposal screening, reference
-P5 calibration and final structure acceptance must be supplied and checked for
-the actual experiment. No model download, private deployment path or research
-result is required for the synthetic workflow.
+To implement V3, apply DeepCDR screening after each `propose` call and use the
+accepted candidates as the next parent bank. Configure reference P5 calibration
+and verify final complexes separately. The synthetic workflow runs without
+model downloads or study data.

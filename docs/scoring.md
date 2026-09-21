@@ -134,7 +134,7 @@ The historical Chothia CDR-context windows are H26–35/H50–65/H95–102 and
 L24–34/L50–56/L89–97. No inter-partner docking pose enters this dual-graph
 network. It is not interchangeable with a full-complex pose model.
 
-## Measurement status is not a selection decision
+## Outputs and selection
 
 Only `status: "ok"` has finite `score` in [0,1] and a finite `logit`. Other
 statuses (`invalid_input`, `asset_error`, `dependency_error`, `inference_error`,

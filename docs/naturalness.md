@@ -8,10 +8,8 @@ generator-related SAbDab-298 masked pseudo-loglikelihood and is restricted to
 records explicitly labelled `model: "iMut-CDR-JM-Epi"`. Other methods do not
 receive likelihood/P5/GC-selected libraries through this API.
 
-This package is an opt-in analysis implementation, **not connected to the
-running design345 workers**. CPU fixtures do not validate private weights, GPU
-parity, a new runtime's calibration, throughput or production acceptance.
-No checkpoint, account, private dataset or model weight is distributed.
+Both analyses require locally supplied model assets. See
+[VALIDATION.md](../VALIDATION.md) for tested runtimes and numerical checks.
 
 ## Inputs and local assets
 
@@ -66,8 +64,7 @@ numbering defaults. It calls heavy-chain numbering then light-chain numbering,
 requires one complete matching domain, and constructs the light-then-heavy
 298-position representation. Slots are right-padded with X and separated by
 X. Unknown residues, ambiguous domains, overlength slots, missing chains and
-internal padding are errors, never truncated or replaced. This stricter
-ambiguous-domain handling is not a claim of legacy error-policy equivalence.
+internal padding are errors, never truncated or replaced.
 
 ## Campaign API and command
 
@@ -87,12 +84,9 @@ python -m imut_cdr_gc.naturalness campaign \
   --device cpu --batch-size 64
 ```
 
-An output directory must be new and project-relative. CUDA is never selected
-automatically: `cuda:N` is an explicit execution request, not resource
-authorization. Resource ownership/exclusivity is the caller's responsibility;
-this interface must not be attached to live workers without a separately
-reviewed deployment and real-device parity. Do not rerun a thermally stopped
-diagnostic device automatically.
+Use a new, project-relative output directory. The default device is CPU;
+request CUDA explicitly with `cuda:N`. Reference calibration must match the
+execution runtime.
 
 The adapter calls the original `score_many` once on valid native inputs in
 original order, with `strict=True`, `return_per_position=True`, native default
@@ -139,10 +133,8 @@ candidates fail. There is no P97.5 ceiling.
 The source identity includes numeric runtime/device characteristics and
 adapter/scorer settings. A reference from another source, checkpoint,
 tokenizer, mask contract, batch size or runtime must not be silently reused.
-Observed historical cross-runtime P5 disagreement is why runtime identity is
-strict; this packaging work does not authorize importing another runtime's
-scores into campaign selection. The caller must acquire a validated
-reference calibration with matching identity, not relabel an old one.
+Use a validated reference calibration with matching identity when changing
+runtimes.
 
 The generic `calibrate` / `apply_calibration` functions retain explicit
 two-bound analysis for other research questions, using standard linear
@@ -164,12 +156,8 @@ there is no automatic per-sequence retry, and no error is a low score. Failed
 attempts carry an explicit status/stage/error in metadata and do not commit a
 completed score file. Atomic score commits prevent partial JSONL acceptance.
 
-This differs intentionally from the old production gate's catch-all
-`score_many` -> `.score` fallback (which can also change the default mask
-batch size). This package is not a drop-in legacy error-policy successor.
-Actual per-record error allowlists and same-GPU whole-call/shard equivalence
-remain separate future validations. After fixing a failure, use a fresh
-purpose-named output directory; automatic inference resume is not provided.
+After fixing a failure, use a fresh purpose-named output directory. Inference
+does not resume automatically or switch scoring methods after an exception.
 
 ## AbNatiV evaluation
 

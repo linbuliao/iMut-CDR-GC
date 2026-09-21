@@ -88,8 +88,8 @@ the current interpreter. HMM files must be its `dat/HMMs/ALL.hmm*`; `hmmscan`
 resolved on PATH must be the declared executable. Install/configure that
 runtime and executable inside the explicit project beforehand. The API does
 not change `sys.path`, create module aliases, install dependencies or rewrite
-the native runtime. Runtime/library and asset identities are recorded, but
-this is not a complete OS/shared-library reproducibility guarantee.
+the native runtime. Runtime, library and asset identities are recorded in
+the output metadata.
 
 Compatible PyTorch, NumPy, einops, BioPython, ANARCI and HMMER are prerequisites.
 The adapter reads the five pinned ImmuneBuilder source assets into an isolated
