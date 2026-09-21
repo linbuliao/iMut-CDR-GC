@@ -121,11 +121,10 @@ The output is deliberately typed as
 `fr_cdr_proposal_requires_full_chain_reconstruction`. It contains `fr_cdr_seq`,
 `parent_fr_cdr_seq`, `founder_fr_cdr_seq`, `requested_sites`, `changed_sites`,
 `actual_mutation_positions`, all corresponding counts and `iteration_trace`.
-Indices are zero-based **FR277** positions. No updated `heavy/light` is invented;
-old parent chains or old DeepCDR/likelihood scores are not carried forward as
-new candidate measurements. The enclosing workflow must apply its verified
-founder CDR→full-chain map, retain all original framework residues and then
-create the actual mutant H/L records.
+Indices are zero-based **FR277** positions. Reconstruct the mutant H/L sequences
+using the verified founder CDR→full-chain map, retaining the original framework
+residues. Score the reconstructed candidate; parent scores do not describe the
+new sequence.
 
 Sampling keeps AA20 in the native order, moves logits to float32 CPU, divides
 by temperature, subtracts the parental-residue penalty, applies top-k and draws

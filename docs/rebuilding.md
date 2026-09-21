@@ -107,9 +107,9 @@ contain its required backbone and side-chain heavy atoms. All original antigen
 heavy atoms and antibody backbone heavy atoms (including original OXT where
 present) must remain within **0.001 Å per Cartesian coordinate**, one PDB decimal
 grid step. These checks are performed independently in worker and parent.
-Hydrogen positions are not claimed to be preserved; newly added hydrogens are
-not heavy-atom completeness evidence. Geometry, stereochemistry, affinity, and
-biological activity remain unvalidated.
+Hydrogen positions are recomputed and excluded from the heavy-atom completeness
+check. Geometry, stereochemistry, affinity and biological activity require
+separate validation.
 
 ## Outputs and interpretation
 
